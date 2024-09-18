@@ -1,0 +1,99 @@
+:root {
+  --ff-primary: "Ramaraja", serif;
+  --ff-secondary: "IBM Plex Mono", monospace;
+  --ff-tertiary: "Gupter", serif; /* Times New Roman alr */
+
+  --ff-reg: 400;
+  --ff-bold: 700;
+
+  --clr-light: #fff;
+  --clr-text: #000000;
+  --clr-accent: #f0f0f0;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.625rem;
+  --fs-h4: 1.25rem;
+  --fs-body: 1rem;
+
+  --transition: 0.3s;
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+
+/* ------------------- */
+/* General Styles      */
+/* ------------------- */
+
+body {
+  background-color: var(--clr-light);
+  color: var(--clr-text);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5em 4em;
+  background-color: var(--clr-accent);
+}
+
+nav ul li {
+  font-size: var(--fs-h3);
+}
+
+.logo {
+  height: 3em;
+  width: 3em;
+}
+
+
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  /* display: none; */
+}
+
+.burger-div {
+  display: none;
+}
