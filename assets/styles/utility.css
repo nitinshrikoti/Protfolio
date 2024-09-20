@@ -51,7 +51,6 @@
   border: 0;
 }
 
-
 /* ------------------- */
 /* General Styles      */
 /* ------------------- */
@@ -71,7 +70,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: .5em 4em;
+  padding: 0.5em 4em;
   background-color: var(--clr-accent);
 }
 
@@ -80,10 +79,9 @@ nav ul li {
 }
 
 .logo {
-  height: 3em;
-  width: 3em;
+  height: 48px;
+  width: 48px;
 }
-
 
 .burger-menu {
   color: var(--primary-color);
@@ -96,4 +94,74 @@ nav ul li {
 
 .burger-div {
   display: none;
+}
+
+/* hero */
+.hero {
+  min-height: 91vh;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  max-width: 74.75rem;
+  margin: auto;
+}
+
+.hero img {
+  height: 37.5rem;
+  width: 37.5rem;
+}
+
+.bio {
+  padding: 0.625rem;
+}
+
+.bio p {
+  font-size: 3rem;
+  font-family: var(--ff-secondary);
+  line-height: 3rem;
+}
+
+.marquee-wrapper {
+  width: 98.9vw;
+  height: 25vh;
+  z-index: 999;
+  position: relative;
+  top: -185px;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+  -webkit-animation: marquee 20s linear infinite;
+}
+
+.marquee p {
+  font-size: 16rem;
+  font-family: var(--ff-tertiary);
+  line-height: 11.6rem;
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -moz-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    -o-transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.spacer {
+  padding: 0 2rem;
 }

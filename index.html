@@ -35,12 +35,20 @@
       href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;700&family=IBM+Plex+Mono&family=Ramaraja&display=swap"
       rel="stylesheet"
     />
+    <!-- Scripts -->
+    <script src="assets/scripts/app.js" defer></script>
+    <script src="assets/scripts/scroll.js" defer></script>
   </head>
   <body>
     <!-- Navbar -->
     <nav>
       <div>
-        <img class="logo" src="assets/images/icons/1.png" alt="logo-img" />
+        <img
+          src="assets/images/icons/1.png"
+          alt="logo-img"
+          loading="lazy"
+          class="logo"
+        />
       </div>
       <div>
         <ul class="navigation flex" role="list">
@@ -57,11 +65,36 @@
     </nav>
 
     <!-- Hero -->
-    <!-- <section class="intro" id="home">
-      <img src="assets/images/icons/2.png" alt="" />
-      <h1>“ Designer & <br />Developer “</h1>
-      <h2>nitinShrikoti - shrikotiNitin</h2>
-    </section> -->
+    <section class="hero" id="about">
+      <div class="hero-container">
+        <img
+          src="assets/images/icons/2.png"
+          alt="hero-img"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate__animated animate__shakeX">
+          <p class="bio-title">“ Designer & <br />Developer “</p>
+        </div>
+      </div>
+
+      <div class="marquee-wrapper">
+        <div class="marquee">
+          <p>
+            nitinShrikoti<span class="spacer">-</span>shrikotiNitin<span
+              class="spacer"
+              >-</span
+            >
+          </p>
+          <p>
+            nitinShrikoti<span class="spacer">-</span>shrikotiNitin<span
+              class="spacer"
+              >-</span
+            >
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Work -->
     <!-- <section class="work" id="work">
@@ -96,8 +129,5 @@
       <p>insta</p>
       <p>linkedIn</p>
     </footer> -->
-
-    <!-- Scripts -->
-    <script src="assets/scripts/app.js"></script>
   </body>
 </html>
