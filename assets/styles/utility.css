@@ -412,3 +412,15 @@ button:active .button_top {
 .card4:hover .discord {
   fill: white;
 }
+
+/* footer */
+.footer {
+  padding: 3rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-footer1 {
+  
+}
