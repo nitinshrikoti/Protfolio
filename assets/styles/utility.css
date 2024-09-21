@@ -421,30 +421,26 @@ button:active .button_top {
   justify-content: space-between;
 }
 
-.section-footer1 {
-  
-}
-
 .footer-sec-1 h3 {
   font-family: var(--ff-primary);
 }
-.footer-sec-1 ul{
+.footer-sec-1 ul {
   font-family: var(--ff-tertiary);
 }
 .footer-sec-2 h3 {
   font-family: var(--ff-primary);
 }
-.footer-sec-2 ul{
+.footer-sec-2 ul {
   font-family: var(--ff-tertiary);
 }
 .section-footer2 h3 {
   font-family: var(--ff-primary);
 }
-.section-footer2 ul{
+.section-footer2 ul {
   font-family: var(--ff-tertiary);
 }
 
-/* From Uiverse.io by alexmaracinaru */ 
+/* From Uiverse.io by alexmaracinaru */
 .cta {
   border: none;
   background: none;
