@@ -40,6 +40,8 @@
 .container {
   padding-inline: 2em;
   margin-inline: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
   max-width: 80rem;
 }
 
@@ -70,11 +72,13 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5em 4em;
+  background-color: var(--clr-light);
+  border: 1px solid var(--clr-text);
 }
 
 nav ul li {
@@ -102,7 +106,7 @@ nav ul li {
   display: block;
   border: 2px solid var(--button_outline_color);
   border-radius: var(--button_radius);
-  padding: 0 .5em;
+  padding: 0 0.5em;
   background: var(--button_color);
   color: var(--button_outline_color);
   transform: translateY(-0.2em);
@@ -119,7 +123,6 @@ button:active .button_top {
   transform: translateY(0);
 }
 
-
 .burger-menu {
   color: var(--primary-color);
   font-size: 2rem;
@@ -135,7 +138,7 @@ button:active .button_top {
 
 /* hero */
 .hero {
-  min-height: 91vh;
+  max-height: 90vh;
 }
 
 .hero-container {
@@ -143,7 +146,8 @@ button:active .button_top {
   align-items: center;
   justify-content: space-between;
   gap: 2.5rem;
-  max-width: 74.75rem;
+  max-width: 80rem;
+  height: 90vh;
   margin: auto;
 }
 
@@ -164,10 +168,10 @@ button:active .button_top {
 
 .marquee-wrapper {
   width: 98.9vw;
-  height: 25vh;
-  z-index: 999;
+  height: 30vh;
+  z-index: 2;
   position: relative;
-  top: -185px;
+  top: -255px;
   overflow: hidden;
 }
 
@@ -182,7 +186,7 @@ button:active .button_top {
 .marquee p {
   font-size: 16rem;
   font-family: var(--ff-tertiary);
-  line-height: 11.6rem;
+  line-height: 13.6rem;
   display: inline-block;
 }
 
@@ -201,4 +205,74 @@ button:active .button_top {
 
 .spacer {
   padding: 0 2rem;
+}
+
+/* work */
+
+.section-heading {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid var(--clr-text);
+  margin-top: 2rem;
+  padding: 0 5.25rem;
+}
+.head-title {
+  padding: 1rem 0px;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h2);
+}
+
+.card-container {
+  margin: 3.5em 5em;
+  padding: 4rem 10rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*Rainbow card*/
+.card {
+ --background: #f5f5f5;
+ --green: #1FC11B;
+ --yellow: #FFD913;
+ --orange: #FF9C55;
+ --red: #FF5555;
+ --violet: #555BFF;
+ width: 20rem;
+ height: 29rem;
+ display: flex;
+ flex-direction: column;
+ gap: 1em;
+ background: var(--background);
+ padding: 1rem;
+ border: 3px solid var(--violet);
+ box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+        20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 
+        30px -30px 0 -3px var(--background), 30px -30px var(--orange), 
+        40px -40px 0 -3px var(--background), 40px -40px var(--red);
+ transition: box-shadow 1s, top 1s, left 1s;
+}
+
+
+/*Hover*/
+.card:hover {
+ box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--green),
+      0 0 0 -3px var(--background), 0 0 0 0  var(--yellow),
+      0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
+      0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
+}
+
+.card p {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-body);
+}
+
+.card h2 {
+  font-family: var(--ff-tertiary);
+  font-size: var(--fs-h2);
+}
+
+.card h3 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-body);
 }
